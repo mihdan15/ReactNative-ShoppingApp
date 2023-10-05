@@ -2,9 +2,9 @@ import React from "react";
 import { ScrollView, StyleSheet, View, Text, Image } from "react-native";
 import { Color, FontSize, Padding, Border } from "../../../pages/GlobalStyles";
 
-const Search = () => {
+const Newmem = () => {
   return (
-    <View>
+    <View style={{ top: 30 }}>
       <Text style={[styles.traktiranPenggunaBaru, styles.berakhirDalamClr]}>
         Traktiran Pengguna Baru
       </Text>
@@ -193,11 +193,11 @@ const styles = StyleSheet.create({
     textAlign: "left",
   },
   a5b170e6474aB828Edef947a3aIcon: {
-    width: 119,
-    height: 224,
+    width: 130,
+    height: 240,
   },
   lihatSemua: {
-    left: 258,
+    left: 340,
     top: 419,
     textAlign: "center",
     fontSize: FontSize.size_3xs,
@@ -205,8 +205,8 @@ const styles = StyleSheet.create({
   },
   homeChild1: {
     backgroundColor: "#007028",
-    height: 221,
-    width: 331,
+    height: 300,
+    width: "100%",
   },
   homeChild1Position: {
     top: 441,
@@ -297,4 +297,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Search;
+export default Newmem;

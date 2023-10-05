@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
   },
   rectangleView: {
     top: 425,
-    height: 244,
+    height: 344,
   },
 });
 

@@ -2,7 +2,7 @@ import React from "react";
 import { ScrollView, StyleSheet, View, Text, Image } from "react-native";
 import { Color, FontSize, Padding, Border } from "../../../pages/GlobalStyles";
 
-const Search = () => {
+const Loc = () => {
   return (
     <View style={[styles.iconPinOutlineParent, styles.parentFlexBox]}>
       <Image
@@ -66,4 +66,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Search;
+export default Loc;

@@ -2,9 +2,9 @@ import React from "react";
 import { ScrollView, StyleSheet, View, Text, Image } from "react-native";
 import { Color, FontSize, Padding, Border } from "../../../pages/GlobalStyles";
 
-const Search = () => {
+const Navbar = () => {
   return (
-    <View>
+    <View style={{ flex: 1 }}>
       <View style={styles.homeChild2} />
       <View style={[styles.groupParent, styles.parentFlexBox]}>
         <View style={styles.homeParent}>
@@ -73,8 +73,11 @@ const styles = StyleSheet.create({
     width: 40,
   },
   groupParent: {
-    top: 637,
-    width: 305,
+    position: "absolute", // <-- Tambahkan ini
+    bottom: 0, // <-- Tambahkan ini
+    width: "100%",
+    // top: 637,
+    // width: 305,
   },
   wishlistIcon: {
     width: "70.59%",
@@ -89,7 +92,7 @@ const styles = StyleSheet.create({
     color: Color.colorGray_100,
   },
   wishlistParent: {
-    width: 34,
+    width: 35,
   },
   officialStoreIcon: {
     height: "67.77%",
@@ -104,7 +107,7 @@ const styles = StyleSheet.create({
     left: 0,
   },
   wrapperPosition: {
-    top: 24,
+    top: 35,
     position: "absolute",
   },
   feedIcon: {
@@ -124,15 +127,15 @@ const styles = StyleSheet.create({
     overflow: "hidden",
   },
   homeParent: {
-    height: 32,
-    width: 26,
+    height: 35,
+    width: 35,
   },
   groupParentSpaceBlock: {
     marginLeft: 30,
     height: 35,
   },
   groupContainer: {
-    width: 24,
+    width: 35,
   },
   iconPosition1: {
     top: "0%",
@@ -177,11 +180,10 @@ const styles = StyleSheet.create({
     width: 405,
   },
   homeChild2: {
-    top: 629,
-    left: -2,
+    top: 710,
     backgroundColor: "#fdfdfd",
-    width: 334,
-    height: 52,
+    width: "100%",
+    height: 70,
     position: "absolute",
   },
   home1: {
@@ -191,4 +193,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Search;
+export default Navbar;

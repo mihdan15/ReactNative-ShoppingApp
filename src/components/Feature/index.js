@@ -2,7 +2,7 @@ import React from "react";
 import { ScrollView, StyleSheet, View, Text, Image } from "react-native";
 import { Color, FontSize, Padding, Border } from "../../../pages/GlobalStyles";
 
-const Search = () => {
+const Feature = () => {
   return (
     <View>
       <Image
@@ -122,14 +122,14 @@ Entertain...`}</Text>
 
 const styles = StyleSheet.create({
   cover1: {
-    left: 13,
+    left: 19,
   },
   cover2: {
-    left: 318,
+    left: 390,
   },
   iconLayout: {
     height: 130,
-    width: 330,
+    width: 360,
     top: 196,
     borderRadius: Border.br_8xs,
     position: "absolute",
@@ -174,4 +174,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Search;
+export default Feature;
